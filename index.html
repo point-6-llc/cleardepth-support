@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClearDepth — Support</title>
+<style>
+  :root {
+    --navy-dark: #1e3a5f;
+    --navy-mid:  #2d5a87;
+    --heading:   #1e4266;
+    --body:      #33475b;
+    --muted:     #6a8199;
+    --page-bg:   #f5f7fa;
+    --card-bg:   #ffffff;
+    --rule:      #e3e9f0;
+    --row-alt:   #eef3f8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page-bg);
+    color: var(--body);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-mid) 100%);
+    color: #fff;
+    padding: 56px 24px 60px;
+    text-align: center;
+  }
+  header h1 { margin: 0; font-size: 2.6rem; font-weight: 700; letter-spacing: -0.5px; }
+  header p  { margin: 12px 0 0; font-size: 1.05rem; opacity: 0.92; }
+  main { max-width: 780px; margin: -28px auto 64px; padding: 0 24px; }
+  .card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(16, 42, 67, 0.08), 0 8px 24px rgba(16, 42, 67, 0.06);
+  }
+  .card h2 {
+    color: var(--heading);
+    font-size: 1.25rem;
+    margin: 0 0 6px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .card h3 { color: var(--heading); font-size: 1rem; margin: 24px 0 6px; }
+  .card h3:first-of-type { margin-top: 18px; }
+  p { margin: 14px 0; }
+  ul { margin: 14px 0; padding-left: 22px; }
+  li { margin: 7px 0; }
+  a { color: #2d6da3; }
+  .contact-email {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--heading);
+    text-decoration: none;
+  }
+  .contact-email:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  table { width: 100%; border-collapse: collapse; margin: 18px 0 6px; font-size: 0.96rem; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--rule); }
+  th { background: var(--row-alt); color: var(--heading); font-weight: 600; }
+  td:first-child { font-weight: 600; color: var(--heading); white-space: nowrap; }
+  footer { text-align: center; padding: 0 24px 56px; color: var(--muted); font-size: 0.88rem; }
+  footer a { color: var(--muted); }
+  @media (max-width: 560px) {
+    header { padding: 40px 20px 48px; }
+    header h1 { font-size: 2rem; }
+    .card { padding: 22px 20px; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ClearDepth</h1>
+  <p>Support</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>Contact Us</h2>
+    <p>
+      Questions, bug reports, lake requests, or account help — email us and we'll get back to you,
+      usually within a couple of business days.
+    </p>
+    <a class="contact-email" href="mailto:cleardepth@point6dev.com">cleardepth@point6dev.com</a>
+    <p class="meta">ClearDepth is built by Point 6 LLC, United States.</p>
+  </div>
+
+  <div class="card">
+    <h2>Common Questions</h2>
+
+    <h3>How do I request a lake be added?</h3>
+    <p>
+      Email us the lake name and state. ClearDepth covers 219 lakes across the US, and we add more
+      based on user requests. Lakes with a public water-level gauge can show live depth adjustments;
+      lakes without one show estimated depths, clearly labeled in the app.
+    </p>
+
+    <h3>Why does a hazard's depth say "Est."?</h3>
+    <p>
+      ClearDepth recalculates hazard depths against your lake's current water level. When no public
+      agency or utility publishes live data for a lake, we fall back to its typical pool elevation
+      and label the reading as estimated so you know it isn't live. Tap the badge in the app for
+      details.
+    </p>
+
+    <h3>How do I report an incorrect or missing hazard?</h3>
+    <p>
+      In the app, open the hazard and use <strong>Confirm</strong> if it's accurate or
+      <strong>Flag for Removal</strong> if it's wrong or no longer there. Enough community votes
+      will remove it automatically. You can also edit or delete hazards you created yourself.
+    </p>
+
+    <h3>How do I turn hazard alerts on or off?</h3>
+    <p>
+      Go to <strong>Profile → Notifications</strong>. You can toggle proximity alerts, choose your
+      alert distance, and enable or disable background alerts (which warn you even when the app is
+      closed).
+    </p>
+
+    <h3>How do I delete my account?</h3>
+    <p>
+      In the app, go to <strong>Profile → Danger Zone → Delete Account</strong>. This permanently
+      removes your account and profile data. Hazard reports you submitted may remain in the
+      community dataset to preserve safety information for other boaters.
+    </p>
+
+    <h3>How do I report abusive content or another user?</h3>
+    <p>
+      Long-press any chat message, or use the <strong>Report</strong> action on a hazard, to flag
+      content for review. You can also block a user from their profile. If something needs urgent
+      attention, email us directly.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Safety Notice</h2>
+    <p>
+      ClearDepth shows community-reported hazards and is <strong>not</strong> a navigational chart.
+      Hazard reports are submitted by other boaters and are not verified by any government or
+      surveying authority. Depths are estimates that change with water level, weather, and lake
+      conditions.
+    </p>
+    <p>
+      Always navigate with appropriate caution, maintain a proper lookout, and rely on official
+      charts and your own judgment on the water.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>More</h2>
+    <table>
+      <tr>
+        <td>Privacy Policy</td>
+        <td><a href="https://point-6-llc.github.io/cleardepth-privacy/">View our privacy policy</a></td>
+      </tr>
+      <tr>
+        <td>Company</td>
+        <td><a href="https://point6dev.com">point6dev.com</a></td>
+      </tr>
+      <tr>
+        <td>Support email</td>
+        <td><a href="mailto:cleardepth@point6dev.com">cleardepth@point6dev.com</a></td>
+      </tr>
+    </table>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Point 6 LLC. All rights reserved.
+</footer>
+
+</body>
+</html>
